@@ -44,7 +44,7 @@ let usuarioSchema = new Schema({
     }
 });
 
-
+//Evitamos devolver el pass 
 usuarioSchema.methods.toJSON = function() {
 
     let user = this;
